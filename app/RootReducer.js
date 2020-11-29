@@ -3,9 +3,9 @@ import { createStore } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 
 import home from "./components/home/reducer.js";
-import graph from "./components/graph/reducer.js";
+// import graph from "./components/graph/reducer.js";
 
-const rootReducer = combineReducers({ home, graph });
+const rootReducer = combineReducers({ home });
 
 const store = createStore(rootReducer, {}, composeWithDevTools());
 

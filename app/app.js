@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { HashRouter as Router } from "react-router-dom";
 import { Provider } from "react-redux";
 
-import Layout from "./Layout.js";
+import Layout from "./layout/Layout.js";
 import store from "./RootReducer.js";
 
 import "./sass/main.scss";

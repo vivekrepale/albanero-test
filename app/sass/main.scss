@@ -4,5 +4,12 @@
 @import "base/typography";
 @import "base/base";
 
+@import "./utilities/_button.scss";
+
+@import "../layout/_layout.scss";
+
 @import "../components/home/_home.scss";
+@import "../components/home/custom-row/_custom-row.scss";
+@import "../components/home/card/_card.scss";
+
 @import "../components/graph/_graph.scss";

@@ -1,0 +1,50 @@
+.card-container {
+	display: grid;
+
+	width: 28rem;
+	// height: 15rem;
+	background-color: $color-bg-light;
+	color: $color-text-dark;
+	border-radius: 4px;
+	padding: 1rem;
+	align-content: start;
+	// overflow: hidden;
+
+	&__text {
+		font-size: 20px;
+		font-weight: 500;
+	}
+
+	&__top {
+		display: grid;
+		grid-template-columns: minmax(min-content, 2fr) 1fr;
+		grid-gap: 1rem;
+
+		word-break: normal;
+
+		&__name {
+			word-wrap: break-word;
+			font-size: 22px;
+			font-weight: 800;
+			// text-decoration: underline;
+			max-width: 16rem;
+			hyphens: auto;
+		}
+
+		&__id {
+			// color: aqua;
+			font-size: 16px;
+			justify-self: end;
+			color: $color-blue;
+		}
+	}
+
+	&__value {
+		// color: ;
+		font-size: 20px;
+		word-wrap: break-word;
+		max-width: 26rem;
+		hyphens: auto;
+		// align-self: start;
+	}
+}
