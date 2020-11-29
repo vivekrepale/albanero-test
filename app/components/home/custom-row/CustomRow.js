@@ -6,6 +6,7 @@ const CustomRow = ({ dispatch, id, name, value }) => {
 	const [localValue, setLocalValue] = useState(value);
 
 	const handleSubmit = (e) => {
+		e.preventDefault();
 		dispatch({ type: "deleteSelectedRow", id });
 	};
 
@@ -23,14 +24,14 @@ const CustomRow = ({ dispatch, id, name, value }) => {
 				<input
 					className="custom-row-container__inputs__input"
 					type="text"
-					value={name}
+					// value={name}
 					onChange={(e) => setLocalName(e.target.value)}
 					placeholder="Name"
 				/>
 				<input
 					className="custom-row-container__inputs__input"
 					type="text"
-					value={value}
+					// value={value}
 					onChange={(e) => setLocalValue(e.target.value)}
 					placeholder="Value"
 				/>

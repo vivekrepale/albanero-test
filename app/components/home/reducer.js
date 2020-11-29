@@ -22,10 +22,18 @@ const addCustomRow = (array) => {
 //This function takes in customRowsArray and id of selected custom row from state and and return an array
 //without that selected custom row
 const deleteSelectedRow = (array, id) => {
-	const newArray = array.filter((item) => {
-		return item.id != id;
+	debugger;
+	console.log(array, id);
+	const newArray = [];
+	array.map((item) => {
+		if (item.id != id) {
+			console.log(item);
+			newArray.push(item);
+		}
 	});
+	console.log(newArray);
 	return newArray;
+	// return array;
 };
 
 /*handleNameChange and handleValueChange both, first map over the array from the state, if
