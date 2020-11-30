@@ -22,7 +22,7 @@ const addCustomRow = (array) => {
 //This function takes in customRowsArray and id of selected custom row from state and and return an array
 //without that selected custom row
 const deleteSelectedRow = (array, id) => {
-	debugger;
+	// debugger;
 	console.log(array, id);
 	const newArray = [];
 	array.map((item) => {

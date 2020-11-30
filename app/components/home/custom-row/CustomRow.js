@@ -18,20 +18,28 @@ const CustomRow = ({ dispatch, id, name, value }) => {
 		dispatch({ type: "handleValueChange", id, value: localValue });
 	}, [localValue]);
 
+	useEffect(() => {
+		setLocalName(name);
+	}, [name]);
+
+	useEffect(() => {
+		setLocalValue(value);
+	}, [value]);
+
 	return (
 		<form onSubmit={handleSubmit} className="custom-row-container">
 			<div className="custom-row-container__inputs">
 				<input
 					className="custom-row-container__inputs__input"
 					type="text"
-					// value={name}
+					value={localName}
 					onChange={(e) => setLocalName(e.target.value)}
 					placeholder="Name"
 				/>
 				<input
 					className="custom-row-container__inputs__input"
 					type="text"
-					// value={value}
+					value={localValue}
 					onChange={(e) => setLocalValue(e.target.value)}
 					placeholder="Value"
 				/>
